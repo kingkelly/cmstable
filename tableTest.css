@@ -1,0 +1,175 @@
+:root {
+  --darkness: #414768;
+  --blueness: #4255F9;
+  --outline: #AFBDDC;
+  --grey: #B2B5C7;
+  --highline: #DEE4F2;
+  --lightness: #FAFAFF;
+  --death: #FB4D4D;
+}
+
+
+body {
+color: var(--darkness);
+font-family: 'Radio-Canada';
+font-size: 15px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wholeTable {
+margin: 0 auto;
+width: 850px;
+margin-top: 100px;
+}
+
+.row {
+	background-color: white;
+	padding: 12px 16px 10px 16px;
+	border-bottom: 1px solid var(--highline);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+
+.row:hover {
+	background-color: var(--lightness);
+	cursor: pointer;
+}
+
+.row:hover .trash{
+	visibility: visible;
+}
+
+.checkcol {
+
+}
+
+
+.checkbox {
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border: 1px solid var(--outline);
+	border-radius: 5px;
+	outline: none;
+}
+
+.checkbox:hover {
+	border: 1px solid var(--blueness);
+}
+
+.checkboxchecked {
+	background-color:  var(--blueness);
+	background-image: url(check.svg) ;
+	background-position: 2px 2px;
+}
+
+.smalltxt {
+	color: var(--grey);
+	font-size: 13px;
+}
+
+.thumb {
+	float: left;
+	margin-right: 10px;
+	border: 1px solid var(--grey);
+	background: url(https://images.tou.tv/c_scale,q_80,w_360,h_202/v1/ici-tou-tv/promos/16x9/f5a46afc-bc8d-b8f9-04af-2a2625b10ccf.jpg);
+	background-size: cover;
+	width: 70px;
+	height: 40px;
+
+}
+
+.thumb:hover {
+	border: 1px solid var(--blueness);
+}
+
+.thumb:hover .mag{
+	visibility: visible;
+}
+
+.mag {
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	background: url(zoom-in.svg) no-repeat 23px 8px rgba(0,0,0,0.4);
+}
+
+.butt {
+	background-color: white;
+	border: 1px solid var(--blueness);
+	color: var(--blueness);
+	padding: 8px 18px;
+	border-radius: 3px;
+}
+
+.butt:hover {
+	background-color: var(--blueness);
+	color: white;
+}
+
+.butt:active {
+	background-color: var(--death);
+}
+
+.trash {
+	position: absolute;
+	right: -45px;
+	width: 50px;
+	height: 100%;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+}
+
+.trashsvg:hover {
+	stroke: var(--death);
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	padding: 12px 15px;
+	border-top: 1px solid var(--grey);
+	border-bottom: 1px solid var(--grey);
+
+}
+
+.head {
+	text-transform: uppercase;
+	color: var(--grey);
+	font-weight: 500;
+	font-size: 12px;
+}
+
+.head:hover {
+	color: var(--blueness);
+	cursor: pointer;
+}
+
+.sort {
+	background: url(sort.svg) no-repeat 5px 3px;
+	background-size: 11px;
+	width: 19px;
+	height: 13px;
+	visibility: visible;
+	display: inline-block;
+}
+
+.sortshow {
+	background: url(sort.svg) no-repeat 3px -1px;
+	background-size: 11px;
+	width: 19px;
+	height: 13px;
+	visibility: visible;
+	transform: rotate(180deg);
+}
+
+
+
